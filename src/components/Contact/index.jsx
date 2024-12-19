@@ -1,28 +1,28 @@
-import { useRef } from "react";
-import emailjs from '@emailjs/browser';
+// import { useRef } from "react";
+// import emailjs from '@emailjs/browser';
 import './index.css';
 import 'animate.css';
 
 const Contact = () => {
-    const refForm = useRef(); 
+    // const refForm = useRef(); 
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
 
-        emailjs
-            .sendForm(
-                'gmail', 
-                'template_fc1kjnc', 
-                refForm.current, 
-                'YWgOjgDC0nUb-bMkX' 
-            )
-            .then((result) => {
-                alert('Message Sent Successfully!');
-                window.location.reload(false)
-            }, (error) => {
-                alert('An error occurred, please try again later.');
-            });
-    };
+        // emailjs
+        //     .sendForm(
+        //         'gmail', 
+        //         'template_fc1kjnc', 
+        //         refForm.current, 
+        //         'YWgOjgDC0nUb-bMkX' 
+        //     )
+        //     .then((result) => {
+        //         alert('Message Sent Successfully!');
+        //         window.location.reload(false)
+        //     }, (error) => {
+        //         alert('An error occurred, please try again later.');
+        //     });
+    // };
 
     return (
         <div className="app-container">
@@ -32,7 +32,7 @@ const Contact = () => {
                     I'm interested in freelancing opportunities. However, if you have other requests or questions, don't
                     hesitate to contact me through the form below.
                 </p>
-                <form ref={refForm} onSubmit={sendEmail}>
+                <form>
                     <ul>
                         <li className="half">
                             <input type="text" name="name" placeholder="Name" required />
