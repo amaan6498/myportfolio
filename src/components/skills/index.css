@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #191d2b;
+    padding: 50px 20px;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    width: 100%;
+    margin: 0 auto; 
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #1e3a8a;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: #1e3a8a;
+  }
+
+  .skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 80px; 
+    width: 80px; 
+  }
+  
+  .skill-icon svg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .skill-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 10px 0;
+  }
+  
+  .skill-item p {
+    font-size: 1rem;
+    color: #666;
+    background-color: #06080e;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .skills h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+
+@media (max-width: 768px) {
+    .skill-item {
+        width: calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-item {
+        width: calc(100% - 20px); /* 1 card per row */
+    }
+}

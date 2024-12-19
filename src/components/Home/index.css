@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.app-container {
+  background-color: #191d2b;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Sora;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+  margin: 30px;
+  width: 45%;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.head {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Sora;
+  font-size: 30px;
+}
+
+.headr {
+  display: block;
+  font-size: 45px;
+  background-image: linear-gradient(to right, #915ff7, #897ea9); /* Set the gradient colors */
+  -webkit-background-clip: text; 
+  color: transparent;
+  opacity: 0;
+}
+
+.loader{
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: slideInLeft;
+  animation-duration: 2s;
+}
+
+.load-job{
+  display: inline-block;
+  margin: 0 0.2rem;
+  animation: slideInLeft 2s ;
+  opacity: 1;
+}
+
+.para {
+  font-size: 18px;
+  margin: 15px 0px;
+  color: #ffffff;
+}
+
+
+.btnn {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  font-size: 18px;
+  font-family: Sora;
+  margin-top: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  animation: heartBeat 1s;
+}
+
+.imgh {
+  width: 30px;
+  color: #ffffff;
+}
+
+
+h1, h5 {
+  margin-bottom: 10px;
+}
+
+h5 {
+  margin-top: 0;
+}
+
+
+@media (max-width: 767px) {
+  .app-container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .container-1 {
+    width: 80%; 
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .container-2 {
+    display: none; 
+  }
+
+  .head {
+    font-size: 24px;
+  }
+
+  .headr {
+    font-size: 36px; 
+  }
+
+  .para {
+    font-size: 16px; 
+  }
+
+  .btn {
+    font-size: 16px; 
+    padding: 12px 20px; 
+  }
+
+  .imgh {
+    width: 20px; 
+  }
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    height: 85vh;
+  }
+
+  .container-1 {
+    width: 40%; 
+  }
+
+  .container-2 {
+    margin: 0 0 0 40px;
+  }
+
+  .head {
+    font-size: 36px; 
+  }
+
+  .headr {
+    font-size: 50px; 
+
+  .para {
+    font-size: 20px; 
+
+  .btn {
+    font-size: 20px; 
+    padding: 14px 28px; 
+  }
+}
+}}

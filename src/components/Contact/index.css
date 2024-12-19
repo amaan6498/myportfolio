@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.app-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #191d2b;
+    font: Sora;
+}
+
+.contact-form{
+    width: 60%;
+    margin-top: 20px;    
+}
+
+.header{
+    display: block;
+    font-size: 45px;
+    background-image: linear-gradient(to right, #915ff7, #897ea9); /* Set the gradient colors */
+    -webkit-background-clip: text; 
+    color: transparent;
+    opacity: 0;
+}
+
+.paraCon{
+    color: #fff;
+    opacity: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    color: #fff;
+    opacity: 0;
+    animation: fadeInUp 1s 2s;
+    animation-fill-mode: forwards;
+    clear: both;
+}
+
+.header, .paraCon{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    animation: fadeInRight 2s;
+    animation-fill-mode: forwards;
+}
+
+li .half{
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}
+
+li .half:first-child{
+    margin-left: 0;
+}
+
+input[type='text'],
+input[type='email']{
+    width: 100%;
+    border: 0;
+    height: 50px;
+    font-size: 16px;
+    background: #1e3a8a;
+    counter-reset: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    border: 0;
+    background: #1e3a8a ;
+    height: 50px;
+    font-size: 16px;
+    counter-reset: #fff;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+
+.flat-button{
+    color: #1e3a8a;
+    background: 0 0 ;
+    font: 11px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 8px 10px ;
+    border: 1px solid #1e3a8a;
+    float: right;
+}

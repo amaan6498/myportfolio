@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;  
+  gap: 60px;
+  background-color: #191d2b;
+  padding: 1px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: Sora;
+  color: #ffffff;
+  margin-left: 7%;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  margin-right: 7%;
+}
+
+.nav-item {
+  margin: 0 20px;
+  font-family: Sora, sans-serif;
+  font-size: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;        
+  color: white;                
+  font-size: 18px;             
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+
+.nav-item a:hover {
+  color: #f39c12; 
+  transform: scale(1.1);         
+}
+
+.nav-item a {
+  text-decoration: none;        /* Remove default underline */
+  color: white;                 /* Set default color for links */
+  font-size: 18px;              /* Adjust font size */
+  position: relative;           /* Ensure the pseudo-element is positioned relative to the link */
+  transition: color 0.3s ease;  /* Smooth transition for color */
+}
+
+/* Hover effect for links */
+.nav-item a::after {
+  content: '';                  /* Creates an empty pseudo-element */
+  position: absolute;           /* Absolute positioning within the link */
+  bottom: 0;                    /* Position at the bottom of the text */
+  left: 0;                      /* Align to the left */
+  width: 0;                     /* Start with no width */
+  height: 2px;                  /* Set height of the underline */
+  background-color: #f39c12;    /* Underline color */
+  transition: width 0.3s ease;  /* Animate width change on hover */
+}
+
+/* Hover state for links - reveal the underline */
+.nav-item a:hover::after {
+  width: 100%;                  /* Expand underline to full width */
+}
+
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f1f1f1;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 36px;
+    margin-left: 7%;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-right: 7%;
+  }
+
+  .nav-item {
+    margin: 0 20px;
+    font-size: 20px;
+  }
+}
