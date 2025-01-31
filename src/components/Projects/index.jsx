@@ -17,6 +17,11 @@ const projects = [
         img: 'https://img.freepik.com/premium-vector/portfolio-creative-text-banner-with-black-background-illustration_755074-98.jpg',
         description: 'An interactive website designed to showcase my web development skills, from dynamic front-end interfaces to robust back-end solutions. It highlights my expertise in creating seamless, user-focused web applications with modern technologies.',
         tools: ['React', 'CSS', 'JS',  'Node.js', 'animate.css']
+    },{
+        name: 'Jobby',
+        img: 'https://assets.ccbp.in/frontend/content/react-js/jobby-app-home-lg-output.png',
+        description: 'Built a job portal with user authentication, dynamic filters (employment type, salary range, search), and API-driven job details. Enabled seamless routing for all users, improving search experience with dynamic listings based on input.',
+        tools: ['CSS', 'JS', 'React', 'JSX', "APIs"]
     }
 ];
 
