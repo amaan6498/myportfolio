@@ -4,6 +4,7 @@ import About from '../About';
 import Skills from '../skills';
 import Projects from '../Projects';
 import Contact from '../Contact';
+import Footer from '../Footer';
 
 import { Component } from "react";
 
@@ -26,7 +27,7 @@ class Portfolio extends Component{
                 <section id="contact">
                     <Contact />
                 </section>
-                
+                <Footer />
             </div>
         )
     }

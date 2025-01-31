@@ -2,7 +2,7 @@
 
 .app-container {
   background-color: #191d2b;
-  height: 85vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -16,8 +16,8 @@
   align-items: flex-start;
   text-align: left;
   padding: 20px;
-  margin: 30px;
-  width: 45%;
+  margin: 45px 30px;
+  width: 55%;
 }
 
 .container-2 {
@@ -36,7 +36,7 @@
 
 .headr {
   display: block;
-  font-size: 45px;
+  font-size: 28px;
   background-image: linear-gradient(to right, #915ff7, #897ea9); /* Set the gradient colors */
   -webkit-background-clip: text; 
   color: transparent;
@@ -47,7 +47,7 @@
   display: inline-block;
   margin: 0 0.5rem;
 
-  animation: slideInLeft;
+  animation: slideInRight;
   animation-duration: 2s;
 }
 
@@ -176,3 +176,5 @@ h5 {
   }
 }
 }}
+
+

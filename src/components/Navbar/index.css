@@ -6,11 +6,11 @@ html {
 
 .navbar {
   display: flex;
-  justify-content: space-between; 
-  align-items: center;  
-  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Space between logo and hamburger */
   background-color: #191d2b;
-  padding: 1px;
+  padding: 10px;
 }
 
 .logo {
@@ -28,68 +28,80 @@ html {
   padding: 0;
   color: #ffffff;
   margin-right: 7%;
+  /* Initially hide the nav links on mobile */
+  display: none;
+}
+
+.nav-list.open {
+  /* Show the nav links when the menu is open */
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  position: absolute; /* Make the menu overlay */
+  top: 60px; /* Below the navbar */
+  right: 0;
+  background-color: #191d2b;
+  width: 100%;
+  padding: 20px;
 }
 
 .nav-item {
-  margin: 0 20px;
+  margin: 10px 0;
   font-family: Sora, sans-serif;
   font-size: 20px;
 }
 
 .nav-item a {
-  text-decoration: none;        
-  color: white;                
-  font-size: 18px;             
-  transition: color 0.3s ease, transform 0.3s ease; 
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-
 
 .nav-item a:hover {
-  color: #f39c12; 
-  transform: scale(1.1);         
+  color: #f39c12;
+  transform: scale(1.1);
 }
 
-.nav-item a {
-  text-decoration: none;        /* Remove default underline */
-  color: white;                 /* Set default color for links */
-  font-size: 18px;              /* Adjust font size */
-  position: relative;           /* Ensure the pseudo-element is positioned relative to the link */
-  transition: color 0.3s ease;  /* Smooth transition for color */
-}
-
-/* Hover effect for links */
+/* Add underline on hover */
 .nav-item a::after {
-  content: '';                  /* Creates an empty pseudo-element */
-  position: absolute;           /* Absolute positioning within the link */
-  bottom: 0;                    /* Position at the bottom of the text */
-  left: 0;                      /* Align to the left */
-  width: 0;                     /* Start with no width */
-  height: 2px;                  /* Set height of the underline */
-  background-color: #f39c12;    /* Underline color */
-  transition: width 0.3s ease;  /* Animate width change on hover */
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f39c12;
+  transition: width 0.3s ease;
 }
 
-/* Hover state for links - reveal the underline */
 .nav-item a:hover::after {
-  width: 100%;                  /* Expand underline to full width */
+  width: 100%;
 }
 
-
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s;
+/* Styles for the hamburger menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  width: 30px;
 }
 
-.nav-link:hover {
-  color: #f1f1f1;
+.hamburger .dot {
+  height: 5px;
+  width: 30px;
+  background-color: white;
+  border-radius: 5px;
 }
 
+/* Media Queries for mobile view */
 @media (max-width: 767px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row; /* Keep logo and hamburger in a row */
     align-items: center;
     padding: 10px;
   }
@@ -100,17 +112,31 @@ html {
   }
 
   .nav-list {
-    flex-direction: column;
+    flex-direction: column; /* Keep nav items in column layout */
     margin-right: 0;
     margin-top: 10px;
+    display: none; /* Hide the navigation by default */
   }
 
   .nav-item {
     font-size: 18px;
     margin: 10px 0;
   }
+
+  /* Show the hamburger menu in mobile view */
+  .hamburger {
+    display: flex;
+  }
+
+  /* When the menu is open, display it as a column and align it properly */
+  .nav-list.open {
+    display: flex; /* Show the nav items */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+  }
 }
 
+/* Styles for larger screens */
 @media (min-width: 768px) {
   .navbar {
     flex-direction: row;

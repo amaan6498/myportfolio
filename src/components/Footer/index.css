@@ -1,0 +1,41 @@
+.footer {
+    background-color: #191d2b;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .footer li {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .footer a {
+    display: block;
+    text-decoration: none;
+  }
+/* SVG Icon styles */
+.footer svg {
+    width: 50px; /* Set a fixed width for the icons */
+    height: 50px; /* Set a fixed height for the icons */
+    transition: transform 0.3s ease; /* Add a transition effect for hover */
+}
+
+/* Hover effect on icons */
+.footer svg:hover {
+    transform: scale(1.1); /* Slightly scale up the icons when hovered */
+}
+
+/* Accessibility: Focus styles */
+.footer a:focus svg {
+    outline: 3px solid #f39c12; /* Add a focus outline for accessibility */
+}

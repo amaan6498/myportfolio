@@ -101,3 +101,7 @@ textarea{
     border: 1px solid #1e3a8a;
     float: right;
 }
+
+.flat-button:hover{
+    cursor: pointer;
+}
