@@ -47,14 +47,21 @@
   display: inline-block;
   margin: 0 0.5rem;
 
-  animation: slideInRight;
+  animation: flipInX;
   animation-duration: 2s;
 }
 
 .load-job{
   display: inline-block;
   margin: 0 0.2rem;
-  animation: slideInLeft 2s ;
+  animation: flipInX 2s ;
+  opacity: 1;
+}
+
+.load-job-para{
+  display: inline-block;
+  margin: 0 0.2rem;
+  animation: flipInX 1s;
   opacity: 1;
 }
 

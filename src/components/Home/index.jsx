@@ -31,7 +31,7 @@ class Home extends Component {
           <h5 className="headr load-job">
             <MyComponent strings={['Software Engineer.', 'MERN Developer.', 'Web Developer']} />
           </h5>
-          <h5 className="para load-job">
+          <h5 className="para load-job-para">
             I am passionate about crafting modern, intuitive solutions using 
             the latest technologies. My mission is to solve real-world problems and 
             create applications that make a lasting impact, all while keeping 
